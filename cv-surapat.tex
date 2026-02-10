@@ -4,37 +4,12 @@
 %%%%%%%%%%%%%%%%
 
 \documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
-
-% Change the page layout if you need to
-\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
-
-% The paracol package lets you typeset columns of text in parallel
-\usepackage{paracol}
-
-\definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{666666}
-\definecolor{DarkBlue}{HTML}{003366}
-\definecolor{PastelBlue}{HTML}{6699CC}
-\definecolor{GoldenEarth}{HTML}{E7D192}
-\colorlet{name}{black}
-\colorlet{tagline}{PastelBlue}
-\colorlet{heading}{DarkBlue}
-\colorlet{headingrule}{GoldenEarth}
-\colorlet{subheading}{PastelBlue}
-\colorlet{accent}{PastelBlue}
-\colorlet{emphasis}{SlateGrey}
-\colorlet{body}{LightGrey}
-
-\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
-\renewcommand{\personalinfofont}{\footnotesize}
-\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
-\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\input{cv-style}
 
 \begin{document}
 
 \name{Surapat Ek-In, PhD}
-\tagline{Software Engineer, Experimental Physicist}
-% Removed photo for ATS compatibility
+\tagline{Full-Stack Software Engineer | Data Engineer | Ex-CERN Physicist}
 \photoR{3cm}{epfl_CV}
 \personalinfo{
   \email{surapat.eki@gmail.com}
@@ -49,17 +24,16 @@
 \vspace{-6mm}
 \cvsection{About Me}
 
-Software engineer and physicist (PhD) with expertise in high-performance computing, algorithm optimization, and real-time image/data processing. Experienced in camera and photo-detector systems, embedded platforms (Jetson), and large-scale data pipelines. Proven track record of accelerating scientific discovery and delivering scalable, production-grade software solutions, including products successfully launched to market.
+Ex-CERN physicist turned core full-stack software engineer and data engineer in startup environments. I build end-to-end products from hardware control and edge analytics to backend/frontend delivery, with a focus on clean, evolvable code for fast-paced teams. Expert in real-time image processing and edge-device analysis (Jetson), with a track record of shipping production systems and launching product lines to market.
 
 \cvsection{Software Engineering Skills}
 \begin{itemize}
     \item \textbf{Programming Languages \& Frameworks:} Python, C/C++, TypeScript, React, Next.js, Bash
-    \item \textbf{Data Science \& Machine Learning:} NumPy, OpenCV, SciPy, Pandas, PyTorch, Scikit-Learn, Jupyter
-    \item \textbf{Backend Development:} FastAPI, Django, SQLite
-    \item \textbf{Cloud \& DevOps:} AWS (S3, EC2, SageMaker), Docker, Git (CI/CD), GitLab CI, Ansible
-    \item \textbf{Operating Systems:} Linux (systemd, udev, GRUB, Tegra System), ROS2
-    \item \textbf{Embedded \& Hardware:} Jetson TX2, Jetson Orin Nano, Silicon Photomultiplier (SiPM), CMOS
-    \item \textbf{Software Quality:} Pytest, CI/CD pipelines, Code Profiling (KCachegrind)
+    \item \textbf{Backend \& Data Engineering:} FastAPI, Django, REST APIs, SQLite, production data pipelines
+    \item \textbf{Data/ML \& Computer Vision:} NumPy, OpenCV, SciPy, Pandas, PyTorch, Scikit-Learn, Jupyter
+    \item \textbf{Cloud \& DevOps:} AWS, Docker, GitLab CI, Ansible, reproducible deployments
+    \item \textbf{Edge/Embedded \& Systems:} Linux (systemd, udev, GRUB), Jetson TX2/Orin Nano, real-time processing
+    \item \textbf{Software Quality \& Applied AI:} Typed Python, Pytest, CI/CD, profiling (KCachegrind), local LLM workflows
 \end{itemize}
 
 
@@ -67,7 +41,7 @@ Software engineer and physicist (PhD) with expertise in high-performance computi
 \textbf{PhD in Physics} \
 EPFL/CERN, Switzerland \hfill 2018 -- 2022 \\
 Thesis: Model-independent measurement of charm mixing parameters. \\
-Nominated for a distinction thesis.\\
+Nominated for distinction thesis.\\
 \divider
 
 \textbf{Master of Science in Physics} \
@@ -88,37 +62,36 @@ Lino Biotech (Acquired by Miltenyi Biotec) / Zürich, Switzerland \hfill 2023 --
 \begin{itemize}
     \item Achieved a \textbf{10x speedup} in real-time molecular analysis workflows (1 Hz processing) by profiling and optimizing CPU-bound processes using KCachegrind and parallelization (asyncio, multi-threading, multiprocessing).
     \item Increased biosensor sensitivity \textbf{5x} by redesigning statistical analysis pipelines, camera operation, and implementing advanced image processing methods.
-    \item Delivered robust, fully typed Python libraries for biosensor control, image processing, and data pipelines, following strong scalable design. Automate different control parts (stepping motors, cameras, shutters, lasers) for machine operation. 
+    \item Engineered robust, fully typed Python libraries for biosensor control, image processing, and data pipelines, with clean architecture for maintainability and rapid iteration in startup delivery cycles.
+    \item Built internal control software used by mechanical engineers in the lab, automating stepping motors, cameras, shutters, and lasers for reliable machine operation.
+    \item Gathered requirements and aligned implementation across application scientists and mechanical engineers, translating cross-functional needs into production-ready software.
     \item Developed and optimized embedded software solutions on Jetson TX2 and Jetson Orin Nano, enabling real-time data processing for biosensor product integration.
-    \item Maintained CI/CD pipelines (GitLab CI) and containerized development environments (Docker, Ansible), ensuring reproducibility and reliability of edge-device deployments.
-    \item Built and maintained a Next.js/React frontend integrated with Python backends (FastAPI/Django), supporting full-stack product development.
-    \item Contributed core software and pipeline optimizations to \textbf{two product series successfully launched to the market}, ensuring reliable real-time biosensor performance in production environments.
+    \item Delivered core software for \textbf{one prototype} and \textbf{two product series launched to market}, and continue to manage and maintain sensor software running across \textbf{10+ client-side readers}.
 \end{itemize}
 
 
 \rule{\linewidth}{0.4pt}
 
-\newpage
 
 \textbf{Experimental Particle Physicist} \
 CERN, LHCb collaboration / EPFL, Switzerland \hfill 2018 -- 2022
 \begin{itemize}
-    \item Reduced systematic uncertainty by \textbf{4x} in precision measurements through advanced statistical modeling and large-scale data pipeline optimization (Python, C++).
-    \item Contributed to the \textbf{first observation of the mass difference between neutral charm-meson eigenstates}, a milestone in particle physics, by leading data analysis and algorithm improvements.
-    \item Improved detector performance by developing real-time tracking algorithms in C++ with neural network integration, significantly enhancing algorithmic efficiency under hardware constraints.
-    \item Modernized and documented legacy C software for ASIC board readout, increasing maintainability and usability across the collaboration.
-    \item Built and validated software pipelines for silicon photomultiplier sensors (SND@LHC project), supporting detector R\&D and optimization.
-    \item Implemented automated testing pipelines (Docker, GitLab CI) to ensure reliability of online data capture during experiments.
-    \item Mentored graduate students in scientific computing and data analysis, fostering knowledge transfer within the collaboration.
+    \item Led analysis pipeline development for precision charm-physics measurements, reducing key systematic uncertainty by \textbf{4x} through statistical modeling and large-scale optimization (Python, C++).
+    \item Co-authored the analysis that delivered the \textbf{first observation of the mass difference between neutral charm-meson eigenstates} (published in PRL, 2021).
+    \item Developed low-latency detector tracking software in C++ with neural-network components, improving trigger performance under strict hardware and timing constraints.
+    \item Refactored and documented legacy C code for ASIC board readout, improving maintainability and onboarding efficiency for collaboration users.
+    \item Implemented automated test and CI workflows (Docker, GitLab CI) to strengthen reliability of online data-acquisition software.
+    \item Built validation pipelines for silicon photomultiplier detector R\&D (SND@LHC), improving reproducibility of sensor characterization and performance studies.
 \end{itemize}
 
 \rule{\linewidth}{0.4pt}
 
-\textbf{Data Scientist (Remote - Freelance)} \
+\textbf{Lead Data Engineer / Data Scientist (Freelance, Remote)} \
 Altruistic Innovation Limited, UK \hfill 2021 -- 2022
 \begin{itemize}
-    \item Developed machine learning models for smart electricity grid monitoring on an optical sensor.
-    \item Architected cloud-based solutions using AWS (SageMaker, S3, EC2).
+    \item Led client requirement discovery and translated business constraints into fast prototypes for production-oriented data and ML solutions.
+    \item Originated and validated a method to reduce temperature-induced noise in optical edge sensors for smart electricity-grid monitoring, improving signal reliability.
+    \item Developed ML pipelines and architected cloud-based solutions on AWS (SageMaker, S3, EC2) for scalable deployment.
 \end{itemize}
 
 \cvsection{Publications and Achievements}
@@ -126,27 +99,25 @@ Altruistic Innovation Limited, UK \hfill 2021 -- 2022
     \item \textbf{LHCb Collaboration}, "Model-independent measurement of charm mixing parameters", PRD, 2022.
     \item \textbf{LHCb Collaboration}, "Observation of the mass difference between neutral charm-meson eigenstates", PRL, 2021.
     \item \textbf{S. Ek-In et al.}, "Effects of a Guide Field on the Larmor Electric Field", ApJ, 2017.
-    \item Delivered keynote talks at major physics conferences (ICHEP, SPS, Lomonosov Conference).
 \end{itemize}
 
 
-\cvsection{Certifications}
+\cvsection{Certifications and Languages}
 \begin{itemize}
     \item AWS Cloud Practitioner
     \item Machine Learning in High Energy Physics
-\end{itemize}
-
-\cvsection{Languages}
-\begin{itemize}
     \item English (C1)
     \item German (B1 - SDS)
     \item French (A2)
     \item Thai (Native)
 \end{itemize}
 
-\cvsection{Leisure}
+\cvsection{Technical Interests \& Projects}
 \begin{itemize}
-    \item Popping and Bachata Dancing, Skiing, Scuba Diving, Hiking
+    \item Building and training a robot arm in Isaac Sim/Isaac Lab with ROS2; developing CAD and hands-on mechanical engineering skills.
+    \item Finance and stock-market research project: ranking stocks by ROIC and undervaluation for mid-term trades, with integrated LLM-based recommendation support.
+    \item Built a tabletop AI assistant running local models on Jetson Orin Nano with voice-response capability.
+    \item Popping and Bachata dancing, skiing, scuba diving, hiking.
 \end{itemize}
 
 \end{document}

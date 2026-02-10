@@ -3,6 +3,22 @@
 *.log
 *.out
 *.synctex.gz
+*.fdb_latexmk
+*.fls
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.dvi
+*.nav
+*.snm
+*.vrb
+*.xdv
 
-# Generated CV PDF
+# Generated CV PDFs
 Surapat_Business_CV2.pdf
+Surapat_CV_*.pdf
+cv-surapat-main.pdf
