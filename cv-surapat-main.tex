@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%
+% This is an ATS-friendly CV template created using altacv.cls
+% (v1.7.2, 28 August 2024) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+\input{cv-style}
+
+\begin{document}
+
+\name{Surapat Ek-In, PhD}
+\tagline{Full-Stack Software Engineer | Data Engineer | Ex-CERN Physicist}
+\photoR{3cm}{epfl_CV}
+\personalinfo{
+  \email{surapat.eki@gmail.com}
+  \phone{+41 76 651 2407}
+  \location{Zürich, Switzerland}
+  \linkedin{surapat-ek-in}
+  \github{BlueShifTA}
+  \printinfo{\faIdCard}{Swiss permit C}
+}
+
+\makecvheader
+\vspace{-6mm}
+\cvsection{About Me}
+
+Ex-CERN physicist turned core full-stack software engineer and data engineer in startup environments. I build end-to-end products from hardware control and edge analytics to backend/frontend delivery, with a focus on clean, evolvable code for fast-paced teams. Expert in real-time image processing and edge-device analysis (Jetson), with a track record of shipping production systems and launching product lines to market.
+
+\cvsection{Software Engineering Skills}
+\begin{itemize}
+    \item \textbf{Programming Languages \& Frameworks:} Python, C/C++, TypeScript, React, Next.js, Bash
+    \item \textbf{Backend \& Data Engineering:} FastAPI, Django, REST APIs, SQLite, production data pipelines
+    \item \textbf{Data/ML \& Computer Vision:} NumPy, OpenCV, SciPy, Pandas, PyTorch, Scikit-Learn, Jupyter
+    \item \textbf{Cloud \& DevOps:} AWS, Docker, GitLab CI, Ansible, reproducible deployments
+    \item \textbf{Edge/Embedded \& Systems:} Linux (systemd, udev, GRUB), Jetson TX2/Orin Nano, real-time processing
+    \item \textbf{Software Quality \& Applied AI:} Typed Python, Pytest, CI/CD, profiling (KCachegrind), local LLM workflows
+\end{itemize}
+
+
+\cvsection{Education}
+\textbf{PhD in Physics} \
+EPFL/CERN, Switzerland \hfill 2018 -- 2022 \\
+Thesis: Model-independent measurement of charm mixing parameters. \\
+Nominated for distinction thesis.\\
+\divider
+
+\textbf{Master of Science in Physics} \
+EPFL/CERN, Switzerland \hfill 2016 -- 2018 \\
+GPA: 5.07/6.00 \\
+Thesis: Reconstruction of semileptonic decays and search for rare decay at LHCb.
+
+\divider
+
+\textbf{Bachelor of Science in Physics} \
+Mahidol University, Thailand \hfill 2012 -- 2016 \\
+First Class Honours, GPA: 3.86/4.00 \\
+Thesis: Projected Search for Physics Beyond the Standard Model at the CERN Future Circular Collider.
+
+\cvsection{Professional Experience}
+\textbf{Software Engineer} \
+Lino Biotech (Acquired by Miltenyi Biotec) / Zürich, Switzerland \hfill 2023 -- Present
+\begin{itemize}
+    \item Achieved a \textbf{10x speedup} in real-time molecular analysis workflows (1 Hz processing) by profiling and optimizing CPU-bound processes using KCachegrind and parallelization (asyncio, multi-threading, multiprocessing).
+    \item Increased biosensor sensitivity \textbf{5x} by redesigning statistical analysis pipelines, camera operation, and implementing advanced image processing methods.
+    \item Engineered robust, fully typed Python libraries for biosensor control, image processing, and data pipelines, with clean architecture for maintainability and rapid iteration in startup delivery cycles.
+    \item Built internal control software used by mechanical engineers in the lab, automating stepping motors, cameras, shutters, and lasers for reliable machine operation.
+    \item Gathered requirements and aligned implementation across application scientists and mechanical engineers, translating cross-functional needs into production-ready software.
+    \item Developed and optimized embedded software solutions on Jetson TX2 and Jetson Orin Nano, enabling real-time data processing for biosensor product integration.
+    \item Delivered core software for \textbf{one prototype} and \textbf{two product series launched to market}, and continue to manage and maintain sensor software running across \textbf{10+ client-side readers}.
+\end{itemize}
+
+
+\rule{\linewidth}{0.4pt}
+
+
+\textbf{Experimental Particle Physicist} \
+CERN, LHCb collaboration / EPFL, Switzerland \hfill 2018 -- 2022
+\begin{itemize}
+    \item Led analysis pipeline development for precision charm-physics measurements, reducing key systematic uncertainty by \textbf{4x} through statistical modeling and large-scale optimization (Python, C++).
+    \item Co-authored the analysis that delivered the \textbf{first observation of the mass difference between neutral charm-meson eigenstates} (published in PRL, 2021).
+    \item Developed low-latency detector tracking software in C++ with neural-network components, improving trigger performance under strict hardware and timing constraints.
+    \item Refactored and documented legacy C code for ASIC board readout, improving maintainability and onboarding efficiency for collaboration users.
+    \item Implemented automated test and CI workflows (Docker, GitLab CI) to strengthen reliability of online data-acquisition software.
+    \item Built validation pipelines for silicon photomultiplier detector R\&D (SND@LHC), improving reproducibility of sensor characterization and performance studies.
+\end{itemize}
+
+\rule{\linewidth}{0.4pt}
+
+\textbf{Lead Data Engineer / Data Scientist (Freelance, Remote)} \
+Altruistic Innovation Limited, UK \hfill 2021 -- 2022
+\begin{itemize}
+    \item Led client requirement discovery and translated business constraints into fast prototypes for production-oriented data and ML solutions.
+    \item Originated and validated a method to reduce temperature-induced noise in optical edge sensors for smart electricity-grid monitoring, improving signal reliability.
+    \item Developed ML pipelines and architected cloud-based solutions on AWS (SageMaker, S3, EC2) for scalable deployment.
+\end{itemize}
+
+\cvsection{Publications and Achievements}
+\begin{itemize}
+    \item \textbf{LHCb Collaboration}, "Model-independent measurement of charm mixing parameters", PRD, 2022.
+    \item \textbf{LHCb Collaboration}, "Observation of the mass difference between neutral charm-meson eigenstates", PRL, 2021.
+    \item \textbf{S. Ek-In et al.}, "Effects of a Guide Field on the Larmor Electric Field", ApJ, 2017.
+\end{itemize}
+
+
+\cvsection{Certifications and Languages}
+\begin{itemize}
+    \item AWS Cloud Practitioner
+    \item Machine Learning in High Energy Physics
+    \item English (C1)
+    \item German (B1 - SDS)
+    \item French (A2)
+    \item Thai (Native)
+\end{itemize}
+
+\cvsection{Technical Interests \& Projects}
+\begin{itemize}
+    \item Building and training a robot arm in Isaac Sim/Isaac Lab with ROS2; developing CAD and hands-on mechanical engineering skills.
+    \item Finance and stock-market research project: ranking stocks by ROIC and undervaluation for mid-term trades, with integrated LLM-based recommendation support.
+    \item Built a tabletop AI assistant running local models on Jetson Orin Nano with voice-response capability.
+    \item Popping and Bachata dancing, skiing, scuba diving, hiking.
+\end{itemize}
+
+\end{document}

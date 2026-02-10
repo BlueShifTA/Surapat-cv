@@ -1,0 +1,77 @@
+%%%%%%%%%%%%%%%%%
+% High-impact one-page CV
+%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+\input{cv-style}
+
+\begin{document}
+
+\name{Surapat Ek-In, PhD}
+\tagline{Full-Stack Software Engineer | Data Engineer | Ex-CERN Physicist}
+\photoR{3cm}{epfl_CV}
+\personalinfo{
+  \email{surapat.eki@gmail.com}
+  \phone{+41 76 651 2407}
+  \location{Z\"urich, Switzerland}
+  \linkedin{surapat-ek-in}
+  \github{BlueShifTA}
+  \printinfo{\faIdCard}{Swiss permit C}
+}
+
+\makecvheader
+\vspace{-6mm}
+
+\cvsection{Summary}
+Ex-CERN physicist now shipping production software in startup environments. I build end-to-end products across edge devices, backend/frontend systems, and data pipelines, with emphasis on clean, evolvable code and measurable business impact.
+
+\cvsection{Core Skills}
+\begin{itemize}
+    \item \textbf{Full-Stack \& Backend:} Python, TypeScript, FastAPI, Django, React, Next.js
+    \item \textbf{Data/ML \& Computer Vision:} OpenCV, NumPy, SciPy, Pandas, PyTorch, Scikit-Learn
+    \item \textbf{Edge \& Embedded:} Jetson TX2/Orin Nano, Linux, ROS2, real-time image analysis
+    \item \textbf{Systems \& Delivery:} Docker, GitLab CI, AWS (S3/EC2/SageMaker), typed Python, testing
+    \item \textbf{Robotics \& Applied AI:} Isaac Sim/Isaac Lab, CAD, local LLM deployment, voice AI
+\end{itemize}
+
+\cvsection{Selected Experience}
+\textbf{Software Engineer} \\
+Lino Biotech (Acquired by Miltenyi Biotec), Z\"urich \hfill 2023 -- Present
+\begin{itemize}
+    \item Drove core engineering for end-to-end biosensor products, delivering \textbf{1 prototype} and \textbf{2 product series launched to market}.
+    \item Delivered \textbf{10x speedup} in real-time molecular analysis workflows through profiling and parallel optimization.
+    \item Increased biosensor sensitivity \textbf{5x} via statistical pipeline redesign, camera operation improvements, and image processing upgrades.
+    \item Manage and maintain production sensor software operating across \textbf{10+ client-side readers}.
+    \item Built internal lab software automating motors/cameras/shutters/lasers and collaborated cross-functionally with application scientists and mechanical engineers.
+\end{itemize}
+
+\textbf{Experimental Particle Physicist} \\
+CERN (LHCb) / EPFL, Switzerland \hfill 2018 -- 2022
+\begin{itemize}
+    \item Reduced key systematic uncertainty by \textbf{4x} in precision charm-physics analysis pipelines (Python/C++).
+    \item Co-authored analysis behind the \textbf{first observation of neutral charm-meson mass difference} (PRL 2021).
+    \item Built low-latency detector and validation software under strict hardware and timing constraints.
+\end{itemize}
+
+\textbf{Lead Data Engineer / Data Scientist (Freelance)} \\
+Altruistic Innovation Limited, UK \hfill 2021 -- 2022
+\begin{itemize}
+    \item Led client requirement discovery and rapid prototyping for smart-grid analytics.
+    \item Originated a method reducing temperature-induced noise in optical edge sensors for grid monitoring.
+\end{itemize}
+
+\cvsection{Education \& Achievements}
+\begin{itemize}
+    \item \textbf{PhD Physics}, EPFL/CERN (2018--2022), nominated for distinction thesis.
+    \item \textbf{MSc Physics}, EPFL/CERN (2016--2018), GPA 5.07/6.00.
+    \item Publications: PRD 2022, PRL 2021; keynote talks at ICHEP, SPS, Lomonosov Conference.
+\end{itemize}
+
+\cvsection{Technical Projects}
+\begin{itemize}
+    \item Robot-arm training in Isaac Sim/Isaac Lab with ROS2; growing CAD and mechanical engineering capabilities.
+    \item Stock-screening system (ROIC + undervaluation) with integrated LLM recommendations for mid-term trade ideas.
+    \item Tabletop AI assistant on Jetson Orin Nano running local models with voice response.
+\end{itemize}
+
+\end{document}
